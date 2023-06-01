@@ -1,0 +1,88 @@
+﻿<mah:MetroWindow x:Class="MetroStyleBaseApp.Etapa0"         
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MetroStyleBaseApp"
+        mc:Ignorable="d"
+        TitleCharacterCasing="Normal"
+        ResizeMode="CanMinimize"         
+        Title="Etapa 0 - Proiect MCEE" Height="692.667" Width="840">
+    <Grid RenderTransformOrigin="0.039,0.445" Margin="0,0,4,1" Height="663" VerticalAlignment="Bottom">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="201*"/>
+            <ColumnDefinition Width="202*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="initDataText" HorizontalAlignment="Left" Margin="44,17,0,0" TextWrapping="Wrap" Text="Date inițiale :" VerticalAlignment="Top" FontWeight="Bold"  />
+        <TextBlock HorizontalAlignment="Left" Margin="291,18,0,0" TextWrapping="Wrap" Text="N :" VerticalAlignment="Top" FontWeight="Bold" Width="23"  />
+        <ListBox x:Name="listBox2" HorizontalAlignment="Left" Height="79" Margin="319,13,0,0" VerticalAlignment="Top" Width="58" Background="#FF82E3FF" BorderBrush="#FF0FBFDA" Foreground="#FFF9F9F9" UseLayoutRounding="False" BorderThickness="1" SelectionChanged="listBox2_SelectionChanged">
+            <ListBoxItem x:Name="Itm1" Content="1"/>
+            <ListBoxItem x:Name="Itm2" Content="2"/>
+            <ListBoxItem x:Name="Itm3" Content="3"/>
+            <ListBoxItem x:Name="Itm4" Content="4"/>
+            <ListBoxItem x:Name="Itm5" Content="5"/>
+            <ListBoxItem x:Name="Itm6" Content="6"/>
+            <ListBoxItem x:Name="Itm7" Content="7"/>
+            <ListBoxItem x:Name="Itm8" Content="8"/>
+            <ListBoxItem x:Name="Itm9" Content="9"/>
+            <ListBoxItem x:Name="Itm10" Content="10"/>
+            <ListBoxItem x:Name="Itm11" Content="11"/>
+            <ListBoxItem x:Name="Itm12" Content="12"/>
+            <ListBoxItem x:Name="Itm13" Content="13"/>
+            <ListBoxItem x:Name="Itm14" Content="14"/>
+            <ListBoxItem x:Name="Itm15" Content="15"/>
+            <ListBoxItem x:Name="Itm16" Content="16"/>
+            <ListBoxItem x:Name="Itm17" Content="17"/>
+            <ListBoxItem x:Name="Itm18" Content="18"/>
+            <ListBoxItem x:Name="Itm19" Content="19"/>
+            <ListBoxItem x:Name="Itm20" Content="20"/>
+            <ListBoxItem x:Name="Itm21" Content="21"/>
+        </ListBox>
+        <TextBlock x:Name="initDataText_Copy" HorizontalAlignment="Left" Margin="44,99,0,0" TextWrapping="Wrap" Text="Date de intrare :" VerticalAlignment="Top" TextDecorations="{x:Null}" FontWeight="Bold"  />
+        <TextBlock x:Name="initDataText_Copy1" HorizontalAlignment="Left" Margin="43,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top"   Height="23" Width="236"><Run Text="1) "/><Run Text="Lungimea LEA de înaltă"/><Run Text=" tensiune"/><Run Text=" :"/></TextBlock>
+        <TextBox x:Name="LEA" HorizontalAlignment="Left" Height="22" Margin="291,125,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="86" BorderBrush="#FF0D95BD" IsReadOnly="True" />
+        <Button x:Name="Button_1" Content="Calculare" HorizontalAlignment="Left" Margin="214,543,0,0" VerticalAlignment="Top" Width="160" Click="Button_Click" FontSize="10"  Height="27" BorderBrush="#FF016FCB" Grid.Column="1"/>
+        <TextBlock x:Name="initDataText_Copy2" HorizontalAlignment="Left" Margin="43,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top"   Height="17" Width="227"><Run Text="2) "/><Run Text="Puterea de scc în nodul de sistem "/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="Nod_scc" HorizontalAlignment="Left" Height="22" Margin="291,171,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="86" BorderBrush="#FF0D95BD" IsReadOnly="True" />
+        <TextBlock x:Name="initDataText_Copy3" HorizontalAlignment="Left" Margin="43,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top"   Height="23" Width="237"><Run Text="3) "/><Run Text="Numărul de generatoare (bara de 6"/><Run Text=" "/><Run Text="kV)"/><Run Text=" "/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="G_bar_6kV" HorizontalAlignment="Left" Height="22" Margin="291,217,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="86" BorderBrush="#FF0D95BD" IsReadOnly="True" />
+        <TextBlock x:Name="initDataText_Copy4" HorizontalAlignment="Left" Margin="44,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top"   Height="23" Width="226" RenderTransformOrigin="0.504,0.87"><Run Text="4) "/><Run Text="Puterea unui generator "/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="GeneratorPow" HorizontalAlignment="Left" Height="22" Margin="291,262,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="86" BorderBrush="#FF0D95BD" IsReadOnly="True" RenderTransformOrigin="0.741,0.5" />
+        <TextBlock x:Name="initDataText_Copy5" HorizontalAlignment="Left" Margin="44,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top"   Height="22" Width="235"><Run Text="5) "/><Run Text="Numărul de distribuitori urbani"/><Run Text=" "/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="Urban" HorizontalAlignment="Left" Height="22" Margin="291,306,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="86" BorderBrush="#FF0D95BD" IsReadOnly="True" RenderTransformOrigin="0.5,0.577" />
+        <TextBlock x:Name="initDataText_Copy6" HorizontalAlignment="Left" Margin="44,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top"   Height="23" Width="236"><Run Text="6) "/><Run Text="Numărul de distribuitori rurali "/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="Rural" HorizontalAlignment="Left" Height="22" Margin="291,349,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="86" BorderBrush="#FF0D95BD" IsReadOnly="True" />
+        <TextBlock x:Name="initDataText_Copy7" HorizontalAlignment="Left" Margin="43,398,0,0" TextWrapping="Wrap" VerticalAlignment="Top"   Height="23" Width="227"><Run Text="7) "/><Run Text="Nr de posturi de transformare pe DU :"/></TextBlock>
+        <TextBox x:Name="NrDU" HorizontalAlignment="Left" Height="22" Margin="291,393,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="86" BorderBrush="#FF0D95BD" IsReadOnly="True" />
+        <TextBlock x:Name="initDataText_Copy8" HorizontalAlignment="Left" Margin="43,443,0,0" TextWrapping="Wrap" VerticalAlignment="Top"   Height="23" Width="227"><Run Text="8) "/><Run Text="Nr de posturi de transformare pe DR :"/></TextBlock>
+        <TextBox x:Name="NrDR" HorizontalAlignment="Left" Height="22" Margin="291,438,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="86" BorderBrush="#FF0D95BD" IsReadOnly="True" />
+        <TextBox x:Name="L_DU" HorizontalAlignment="Left" Height="22" Margin="291,483,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="86" BorderBrush="#FF0D95BD" IsReadOnly="True" />
+        <TextBlock x:Name="initDataText_Copy10" HorizontalAlignment="Left" Margin="44,534,0,0" TextWrapping="Wrap" VerticalAlignment="Top"   Width="247" Height="17"><Run Text="10"/><Run Text=") "/><Run Text="Lungimea distributorului "/><Run Text="rural"/><Run Text=" "/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="L_DR" HorizontalAlignment="Left" Height="22" Margin="291,529,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="86" BorderBrush="#FF0D95BD" IsReadOnly="True" />
+        <TextBlock x:Name="initDataText_Copy11" HorizontalAlignment="Left" Margin="24,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top"   Height="17" Width="276" Grid.Column="1"><Run Text="11"/><Run Text=") "/><Run Text="Puterea unui transformator din PTU "/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="P_PTU" HorizontalAlignment="Left" Height="22" Margin="287,125,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="87" BorderBrush="#FF0D95BD" IsReadOnly="True" Grid.Column="1" />
+        <TextBox x:Name="P_PTR" HorizontalAlignment="Left" Height="22" Margin="287,171,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="87" BorderBrush="#FF0D95BD" IsReadOnly="True" Grid.Column="1" />
+        <TextBlock x:Name="initDataText_Copy13" HorizontalAlignment="Left" Margin="24,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top"   Height="17" Width="228" Grid.Column="1"><Run Text="1"/><Run Text="2"/><Run Text=") "/><Run Text="Puterea unui transformator din PT"/><Run Text="R "/><Run Text=":"/></TextBlock>
+        <TextBlock x:Name="initDataText_Copy12" HorizontalAlignment="Left" Margin="24,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top"   Width="228" Height="16" Grid.Column="1"><Run Text="13"/><Run Text=") "/><Run Text="Numărul de "/><Run Text="hale industriale"/><Run Text=" "/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="Nh_text" HorizontalAlignment="Left" Height="22" Margin="287,216,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="87" BorderBrush="#FF0D95BD" IsReadOnly="True" Grid.Column="1" />
+        <TextBlock x:Name="initDataText_Copy14" HorizontalAlignment="Left" Margin="25,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top"   Height="17" Width="211" RenderTransformOrigin="0.5,0.235" Grid.Column="1"><Run Text="14"/><Run Text=") "/><Run Text="Dimensiunile halei"/><Run Text=" "/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="Hall_dim" HorizontalAlignment="Left" Height="22" Margin="287,262,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="87" BorderBrush="#FF0D95BD" IsReadOnly="True" Grid.Column="1" />
+        <TextBlock x:Name="initDataText_Copy15" HorizontalAlignment="Left" Margin="24,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top"   Height="17" Width="212" Grid.Column="1"><Run Text="15"/><Run Text=") "/><Run Text="N"/><Run Text="umărul de motoare din hală"/><Run Text=" :"/></TextBlock>
+        <TextBox x:Name="EnginesNm" HorizontalAlignment="Left" Height="22" Margin="287,306,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="87" BorderBrush="#FF0D95BD" IsReadOnly="True" Grid.Column="1" />
+        <TextBlock x:Name="initDataText_Copy16" HorizontalAlignment="Left" Margin="24,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top"   Height="23" Width="228" Grid.Column="1"><Run Text="16"/><Run Text=") "/><Run Text="Factorul de putere"/><Run Text=" :"/></TextBlock>
+        <TextBox x:Name="cosPhi" HorizontalAlignment="Left" Height="22" Margin="287,347,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="87" BorderBrush="#FF0D95BD" IsReadOnly="True" Grid.Column="1" />
+        <TextBlock x:Name="initDataText_Copy17" HorizontalAlignment="Left" Margin="25,398,0,0" TextWrapping="Wrap" VerticalAlignment="Top"   Height="23" Width="147" Grid.Column="1"><Run Text="1"/><Run Text="7"/><Run Text=") "/><Run Text="Randamentul"/><Run Text=" "/><Run Text=":"/><LineBreak/><Run/><Run Text=" :"/></TextBlock>
+        <TextBox x:Name="Nrand" HorizontalAlignment="Left" Height="22" Margin="287,393,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="87" BorderBrush="#FF0D95BD" IsReadOnly="True" Grid.Column="1" />
+        <TextBlock x:Name="initDataText_Copy18" HorizontalAlignment="Left" Margin="24,443,0,0" TextWrapping="Wrap" VerticalAlignment="Top"   Height="23" Width="228" Grid.Column="1"><Run Text="18) "/><Run Text="Coeficientul de încărcare a motorului"/><Run Text=" "/><Run Text=":"/><LineBreak/><Run/><Run Text=" :"/></TextBlock>
+        <TextBox x:Name="Kmcoef" HorizontalAlignment="Left" Height="22" Margin="287,438,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="87" BorderBrush="#FF0D95BD" IsReadOnly="True" Grid.Column="1" />
+        <TextBlock x:Name="initDataText_Copy19" HorizontalAlignment="Left" Margin="25,488,0,0" TextWrapping="Wrap" VerticalAlignment="Top"   Height="23" Width="200" Grid.Column="1"><Run Text="1"/><Run Text="9"/><Run Text=") "/><Run Text="Coeficientul de simultaneitate"/><Run Text=" "/><Run Text=":"/><LineBreak/><Run/><Run Text=" :"/></TextBlock>
+        <TextBox x:Name="Ksim" HorizontalAlignment="Left" Height="22" Margin="287,483,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="87" BorderBrush="#FF0D95BD" IsReadOnly="True" Grid.Column="1" />
+        <TextBlock x:Name="initDataText_Copy9" HorizontalAlignment="Left" Margin="44,488,0,0" TextWrapping="Wrap" VerticalAlignment="Top"   Height="23" Width="226" RenderTransformOrigin="0.338,0.478"><Run Text="9"/><Run Text=") "/><Run Text="Lungimea distributorului urban "/><Run Text=":"/><LineBreak/><Run/><LineBreak/><Run/><Run Text=" :"/></TextBlock>
+        <TextBlock x:Name="initDataText_Copy20" HorizontalAlignment="Left" Margin="44,584,0,0" TextWrapping="Wrap" VerticalAlignment="Top"   Width="757" Height="60" Grid.ColumnSpan="2"><Run FontWeight="Bold" Text="Important :"/><LineBreak/><Run Text="Dacă numărul de posturi de transformare rurale (punctul 8) este mai mic decât 10, atunci distribuitorul rural se va racorda la bara de 6 kV, iar dacă numărul lor"/><Run Text=" "/><Run Text="este mai mare sau egal cu 10, atunci distribuitorul se va racorda la bara de 20 kV."/><LineBreak/><Run/><LineBreak/><Run Text="Alegerea motoarelor va avea loc în etapa următoare."/></TextBlock>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="58" Margin="78,13,0,0" VerticalAlignment="Top" Width="296" Source="header.png"/>
+        <Button x:Name="Button_1_Copy" Content="Meniu principal" HorizontalAlignment="Left" Margin="25,543,0,0" VerticalAlignment="Top" Width="160" FontSize="10"  Height="27" BorderBrush="#FF016FCB" Grid.Column="1" Click="Main_Menu"/>
+
+
+    </Grid>
+</mah:MetroWindow>

@@ -1,0 +1,19 @@
+﻿<mah:MetroWindow  xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Class="MetroStyleBaseApp.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MetroStyleBaseApp"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"       
+        TitleCharacterCasing="Normal"
+        Title="Mesaj inițiere aplicație" Height="447.439" Width="729.691">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="187" Margin="41,20,0,0" VerticalAlignment="Top" Width="159" Source="Logo-tuiasi.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="233,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="201" Width="454"><Run Text="Aplicația dată reprezintă parcursul elaborării unui proiect la o materie "/><Run Text="de "/><Run Text="disciplină universitară."/><Run Text=" "/><Run Text="Astfel experimentând asupra funcționalității acesteia, autorul a învățat mai multe"/><Run Text=" "/><Run Text="lucruri decât s-ar fi putut aștepta inițial."/><LineBreak/><Run/><LineBreak/><Run Text="Deși, structural acest "/><Run FontWeight="Bold" Text="manager de proiect "/><Run Text="nu pare, la prima vedere ceva complicat, în practică, elaborarea logicii de bază a "/><Run Text="evenimentelor și structurilor decizionale în codul sursă și testarea fiecărui punct slab"/><Run Text=","/><Run Text=" care cauza distrugerea lanțului logic al aplicației și închiderea acesteia "/><Run Text="&quot;"/><Run Text="fără motiv"/><Run Text="&quot;"/><Run Text=" "/><Run Text="au necesitat mai multe ore de căutări a unor "/><Run FontWeight="Bold" Text="soluții cât mai simple posibile"/><Run Text=" (pentru a nu afecta"/><Run Text=" "/><Run Text="scalabilitatea codului și performanța acestuia)"/><Run Text=", la fel și studi"/><Run Text="ul"/><Run Text=" anticipat a fiecarei etape de proiect în parte. Totuși, există unele neclarități în privința"/><Run Text=" "/><Run Text="corectitudinii rezultatelor oferite de această aplicație, deoarece aceasta nu"/><Run Text=" "/><Run Text="a fost evaluată de profesorul de disciplină."/><LineBreak/><Run/><LineBreak/><Run Text=""/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="41,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="81" Width="646"><Run Text="Revenind la faptul că domnul "/><Run FontWeight="Bold" Text="profesor Băiceanu "/><Run Text="a menționat că inițial a avut în plan ideea ca studenții să caute "/><Run FontWeight="Bold" Text="modalități individuale "/><Run Text="pentru a elabora proiect"/><Run Text="ul"/><Run Text=" la această disciplină, "/><Run Text="am decis să elaborez o aplicație instrument "/><LineBreak/><Run Text="pentru a"/><Run Text=" "/><Run Text="&quot;"/><Run Text="automatiza"/><Run Text="&quot;"/><Run Text=" pe cât este de posibil calculele pentru proiect."/><Run Text=" Pe lângă aceasta, cu ajutorul matricilor algebrice în programare, am elab"/><Run Text="orat un "/><Run FontWeight="Bold" Text="funcțional grafic "/><Run Text="pentru elaborarea desenelor necesare proiectului, (schema bloc, amenajarea motoarelor în hală, obținerea coordonatelor acestora pe desen)."/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="41,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" Height="49"><LineBreak/><Run Text="Student "/><Run Text=":  "/><Run FontWeight="Bold" Text="Rosovschi Gabriel"/><LineBreak/><Run Text="E-mail : the2catalyst@gmail.com"/></TextBlock>
+        <Button Content="Ok" HorizontalAlignment="Left" Margin="292,356,0,0" VerticalAlignment="Top" Width="200" Height="29" Click="Ok_dialog" BorderBrush="#FF1296C7" />
+
+    </Grid>
+</mah:MetroWindow>

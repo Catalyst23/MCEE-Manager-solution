@@ -1,0 +1,34 @@
+﻿<mah:MetroWindow x:Class="MetroStyleBaseApp.MainWindow"         
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MetroStyleBaseApp"
+        mc:Ignorable="d"
+               
+        TitleCharacterCasing="Normal"
+
+        ResizeMode="CanMinimize"         
+        Title="MCEE Manager v 1.0" Height="466" Width="832">
+
+
+    <!-- Buttons -->
+    <Grid Margin="0,0,0,3">
+
+        <Button Content="Etapa 0" Click="Etapa0_Click" HorizontalAlignment="Left" Margin="38,21,0,0" VerticalAlignment="Top" Width="139" Height="28"/>
+        <Button Content="Etapa 1" Click="Etapa1_Click"  HorizontalAlignment="Left" Margin="38,71,0,0" VerticalAlignment="Top" Width="139" RenderTransformOrigin="0.56,0.55" Height="28" />
+        <Button Content="Etapa 2" HorizontalAlignment="Left" Margin="38,120,0,0" VerticalAlignment="Top" Width="139" Height="28"/>
+        <Button Content="Etapa 3" HorizontalAlignment="Left" Margin="38,167,0,0" VerticalAlignment="Top" Width="139" Height="28"/>
+        <Button Content="Etapa 4" HorizontalAlignment="Left" Margin="38,216,0,0" VerticalAlignment="Top" Width="139" Height="28"/>
+        <Button Content="Etapa 5" HorizontalAlignment="Left" Margin="38,266,0,0" VerticalAlignment="Top" Width="139" RenderTransformOrigin="0.453,0.6" Height="28"/>
+        <Button Content="Etapa 6" HorizontalAlignment="Left" Margin="38,316,0,0" VerticalAlignment="Top" Width="139" Height="28"/>
+        <TextBlock HorizontalAlignment="Left" Margin="225,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="279" Width="565"><Run Text="Această aplicație reprezintă o modalitate simplificată de a realiza proiectul la disciplina MCEE pentru studenții de la Facultatea de Electrică Energetică și Informatică Aplicată"/><Run Text="."/><LineBreak/><Run/><LineBreak/><Run Text="Etapa 0 funcționează cu datele inițiale ce vor fi alese, apoi calculate cu ajutorul acestei aplicații. "/><LineBreak/><Run Text="La deschidere fiecărei noi etape, va fi necesară introducerea rezultatelor din etapele anterioare acolo"/><LineBreak/><Run Text="unde este cazul."/><Run Text=" "/><LineBreak/><Run/><LineBreak/><Run Text="Aplicația în această instanță nu e capabilă să realizeze scheme bloc sau desene, deși inițial autorul ei"/><LineBreak/><Run Text="a avut mai multe incercări de a integra rezultatele în mod grafic acolo unde acest lucru ar fi de dorit."/><LineBreak/><Run Text="Astfel, aplicația de față se bazează pe realizarea rapidă a calculelor în dependență de datele individuale"/><LineBreak/><Run Text="ale fiecărui student, totuși, autorul nu are ca scop răspândirea acestei probe către ceilalți studenți, "/><LineBreak/><Run Text="scopul inițial presupune obținerea unui feedback din partea profesorului de disciplină."/><LineBreak/><Run Text="Este recomandată realizarea unui screenshot la fiecare etapă rezolvată cu scopul de a evita "/><Run Text="necesitatea "/><Run Text="recompletării"/><Run Text=" "/><Run Text="datelor în mod anticipat."/><LineBreak/><Run/><LineBreak/><Run Text="Acest software este dedicat domnului profesor Florin Băiceanu, din cadrul Facultății IEEIA."/></TextBlock>
+        <Image HorizontalAlignment="Left" Height="64" Margin="225,10,0,0" VerticalAlignment="Top" Width="391" Source="header.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="225,383,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="565"><Run Text="Realizat în"/><Run Text=" C"/><Run Text="#  cu ajutorul WPF .NET                                                              (C) Rosovschi Gabriel     2021"/></TextBlock>
+        <Button Content="Închidere totală" HorizontalAlignment="Left" Margin="38,376,0,0" VerticalAlignment="Top" Width="139" Height="30" BorderBrush="#FFB8B8B9" Click="close_Click" Background="#FFF7F7F7" Foreground="#FF1D0E0E"/>
+
+    </Grid>
+
+
+</mah:MetroWindow>

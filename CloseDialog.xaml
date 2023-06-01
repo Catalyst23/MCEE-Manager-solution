@@ -1,0 +1,19 @@
+﻿<mah:MetroWindow x:Class="MetroStyleBaseApp.CloseDialog"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MetroStyleBaseApp"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        TitleCharacterCasing="Normal"
+        ResizeMode="CanMinimize"  
+        Title="Închidere aplicație" Height="191" Width="461.5">
+    <Grid>
+        <Button Content="Închidere" HorizontalAlignment="Left" Margin="30,108,0,0" VerticalAlignment="Top" Width="175" Click="Close" BorderBrush="#FFD8CBCB"/>
+        <TextBlock HorizontalAlignment="Left" Margin="18,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="86" Width="421" FontWeight="Bold"><Run Text="Confirmați închiderea aplicației? "/><Run FontWeight="Normal"/><LineBreak/><Run FontWeight="Normal"/><LineBreak/><Run FontWeight="Normal" Text="În cazul în care aveți deschisă o formă unde ați introdus mai multe date care nu au fost calculate și salvate, va fi necesară introducerea acestora de la început."/></TextBlock>
+        <Button Content="Continuare proces" HorizontalAlignment="Left" Margin="248,108,0,0" VerticalAlignment="Top" Width="175" Click="Cancel" BorderBrush="#FFCDCDCD"/>
+
+    </Grid>
+</mah:MetroWindow>
